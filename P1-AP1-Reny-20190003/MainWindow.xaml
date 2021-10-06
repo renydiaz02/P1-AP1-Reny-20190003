@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel>
             <Menu>
-                <MenuItem Header="Registro" Click="MenuItem_Click">                    <MenuItem Header="Registro de aportes" Click="MenuItem_Click_1"/>                </MenuItem>                <MenuItem Header="Consulta" Click="MenuItem_Click_2">                    <MenuItem Header="Consulta de aportes" Click="MenuItem_Click_3"/>                </MenuItem>
+                <MenuItem Header="Registro">                    <MenuItem Header="Registro de aportes" Click="MenuItem_Click"/>                </MenuItem>                <MenuItem Header="Consulta">                    <MenuItem Header="Consulta de aportes" Click="MenuItem_Click_1"/>                </MenuItem>
             </Menu>
         </StackPanel>
     </Grid>
