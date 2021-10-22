@@ -9,8 +9,8 @@ using P1_AP1_Reny_20190003.DAL;
 namespace P1_AP1_Reny_20190003.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20211006030428_Migracion_Inicial")]
-    partial class Migracion_Inicial
+    [Migration("20211022024036_migracion_inicial")]
+    partial class migracion_inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,7 +20,7 @@ namespace P1_AP1_Reny_20190003.Migrations
 
             modelBuilder.Entity("P1_AP1_Reny_20190003.Entidades.Aportes", b =>
                 {
-                    b.Property<int>("aporteId")
+                    b.Property<int>("Aporteid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -33,8 +33,8 @@ namespace P1_AP1_Reny_20190003.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Monto")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Monto")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Persona")
                         .HasColumnType("TEXT");
@@ -42,7 +42,7 @@ namespace P1_AP1_Reny_20190003.Migrations
                     b.Property<double>("Total")
                         .HasColumnType("REAL");
 
-                    b.HasKey("aporteId");
+                    b.HasKey("Aporteid");
 
                     b.ToTable("Aportes");
                 });

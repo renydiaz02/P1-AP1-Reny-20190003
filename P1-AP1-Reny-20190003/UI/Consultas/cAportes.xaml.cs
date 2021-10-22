@@ -27,7 +27,7 @@ namespace P1_AP1_Reny_20190003.UI.Consulta
         }
 
         public static string Cantidad = "";
-
+        public static string Total = "";
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
             var listado = new List<Aportes>();
@@ -58,7 +58,9 @@ namespace P1_AP1_Reny_20190003.UI.Consulta
             DatosDataGrid.ItemsSource = listado;
 
             Cantidad = listado.Count().ToString();
+            Total = listado.Sum(x => x.Monto).ToString();
             CantidadTextBlock.Text = Cantidad;
+            TotalTextBlock.Text = Total;
         }
     }
 }

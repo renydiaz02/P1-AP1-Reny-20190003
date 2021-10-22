@@ -13,7 +13,7 @@ namespace P1_AP1_Reny_20190003.BLL
     {
         public static bool Guardar(Aportes aporte)
         {
-            if (!Existe(aporte.aporteId))
+            if (!Existe(aporte.Aporteid))
             {
                 return Insertar(aporte);
             }
@@ -133,7 +133,7 @@ namespace P1_AP1_Reny_20190003.BLL
 
             try
             {
-                encontrado = contexto.Aportes.Any(a => a.aporteId == id);
+                encontrado = contexto.Aportes.Any(a => a.Aporteid == id);
             }
             catch (Exception)
             {

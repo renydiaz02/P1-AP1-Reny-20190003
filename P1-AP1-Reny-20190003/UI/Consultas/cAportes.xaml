@@ -24,15 +24,21 @@
                         <ComboBoxItem Content="Concepto"/>
                     </ComboBox>
                 </StackPanel>
-                <StackPanel Margin="5,0">
-                    <TextBox x:Name="CriterioTextBox" Width="100"/>
+                <StackPanel>
+                    <Label x:Name="Criterio" Content="Criterio:"/>
+                    <TextBox x:Name="CriterioTextBox" Width="101" Height="28"/>
+
                 </StackPanel>
-                <Button x:Name="BuscarButton" Height="34" Width="93" Click="BuscarButton_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/icons8-google-web-search-24.png" />
-                        <Label Content="Buscar"/>
-                    </StackPanel>
-                </Button>
+
+                <StackPanel Width="120" Height="30">
+                    <Button x:Name="BuscarButton" Height="32" Width="115" Click="BuscarButton_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/UIS/Consulta/Buscar.png.png"/>
+                            <Label Content="Buscar"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                
             </StackPanel>
             <StackPanel HorizontalAlignment="Left">
                 <DataGrid x:Name="DatosDataGrid" Height="240" Width="700" AutoGenerateColumns="False">
@@ -50,8 +56,8 @@
                 <Label Content="Total" Margin="200,0,0,0"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock x:Name="CantidadTextBlock" Height="30" Width="30" Margin="10"/>
-                <TextBlock x:Name="TotalTextBlock" Height="30" Width="30" Margin="210, 10"/>
+                <TextBlock x:Name="CantidadTextBlock" Height="30" Width="62" Margin="10"/>
+                <TextBlock x:Name="TotalTextBlock" Height="30" Width="60" Margin="210, 10"/>
             </StackPanel>
 
         </StackPanel>

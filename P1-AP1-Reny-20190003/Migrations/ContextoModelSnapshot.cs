@@ -18,7 +18,7 @@ namespace P1_AP1_Reny_20190003.Migrations
 
             modelBuilder.Entity("P1_AP1_Reny_20190003.Entidades.Aportes", b =>
                 {
-                    b.Property<int>("aporteId")
+                    b.Property<int>("Aporteid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -31,8 +31,8 @@ namespace P1_AP1_Reny_20190003.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Monto")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Monto")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Persona")
                         .HasColumnType("TEXT");
@@ -40,7 +40,7 @@ namespace P1_AP1_Reny_20190003.Migrations
                     b.Property<double>("Total")
                         .HasColumnType("REAL");
 
-                    b.HasKey("aporteId");
+                    b.HasKey("Aporteid");
 
                     b.ToTable("Aportes");
                 });
